@@ -1,0 +1,249 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circuit Squirrels - FLL Team 60911</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light blue-gray background */
+        }
+        .font-luckiest {
+            font-family: 'Luckiest Guy', cursive;
+        }
+        .lego-brick-button {
+            background-color: #ffcf00; /* LEGO Yellow */
+            color: #000000;
+            border: 2px solid #da291c; /* LEGO Red */
+            border-radius: 8px;
+            padding: 10px 20px;
+            font-weight: 600;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .lego-brick-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+        }
+        .lego-header {
+            background-color: #0057a8; /* LEGO Blue */
+            color: #ffffff;
+        }
+        .lego-footer {
+            background-color: #333333; /* Dark Gray */
+            color: #ffffff;
+        }
+        .lego-section-header {
+            color: #da291c; /* LEGO Red */
+        }
+        .card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .nav-link {
+            color: #ffffff;
+            font-weight: 600;
+            padding: 8px 16px;
+            border-radius: 6px;
+            transition: background-color 0.3s ease;
+        }
+        .nav-link:hover {
+            background-color: #ffcf00; /* LEGO Yellow */
+            color: #000000;
+        }
+        /* Fun detail: LEGO stud pattern as a subtle background for sections */
+        .lego-stud-bg {
+            background-image: radial-gradient(#00000010 15%, transparent 16%),
+                              radial-gradient(#00000010 15%, transparent 16%);
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="lego-header p-6 shadow-lg">
+        <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center">
+            <div>
+                <h1 class="font-luckiest text-4xl md:text-5xl mb-1 sm:mb-0">
+                    Circuit Squirrels
+                </h1>
+                <p class="text-sm md:text-base text-yellow-300">FLL Team #60911</p>
+            </div>
+            <nav class="mt-3 sm:mt-0">
+                <ul class="flex space-x-2 sm:space-x-4">
+                    <li><a href="#about" class="nav-link">About Us</a></li>
+                    <li><a href="#robot" class="nav-link">Our Robot</a></li>
+                    <li><a href="#project" class="nav-link">Project</a></li>
+                    <li><a href="#team" class="nav-link">Team</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="bg-gradient-to-r from-yellow-400 via-red-500 to-blue-500 text-white py-20 px-6 text-center">
+        <div class="container mx-auto">
+            <h2 class="font-luckiest text-5xl md:text-6xl mb-4">We go nuts for STEM!</h2>
+            <p class="text-xl md:text-2xl mb-8">Welcome to the official page of the Circuit Squirrels FLL Team!</p>
+            <a href="#about" class="lego-brick-button text-lg">Learn More About Us!</a>
+        </div>
+    </section>
+
+    <section id="about" class="py-16 px-6 lego-stud-bg">
+        <div class="container mx-auto">
+            <h2 class="font-luckiest text-4xl lego-section-header text-center mb-12">About Us</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="card p-8">
+                    <h3 class="font-luckiest text-2xl text-blue-600 mb-4">The Circuit Squirrels</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        We are a FIRST LEGO League Team from Newport News, Virginia. We got started in 2023 and just concluded our second FLL Challenge season.
+                        It has been an amazing journey of learning, building, and competing with our LEGO robots! 
+                        This year, we even went to the World Festival in Houston, Texas, which was SUPER AWESOME!!!
+                    </p>
+                    <p><br/></p>
+        
+
+                    <h3 class="font-luckiest text-2xl text-blue-600 mb-4">About FLL</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        <a href="https://www.firstinspires.org/robotics/fll" class="text-blue-500 hover:underline">FIRST LEGO League</a> (FLL) 
+                        is an awesome program where kids like us (ages 9-14 in Challenge) design, build, and program LEGO robots to solve real-world challenges! 
+                        We also work on an Innovation Project to come up with cool solutions to problems in our community.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        It's all about teamwork, learning, and having tons of fun with science and technology!
+                    </p>
+
+                </div>
+                <div>
+                    <img src="img/WorldFestival_pit.jpg" alt="FLL Team at World Festival" class="rounded-lg shadow-xl w-full h-auto" onerror="this.onerror=null;this.src='https://via.placeholder.com/600x400.png?text=FLL+Team+in+Action';">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="robot" class="py-16 px-6 bg-gray-200">
+        <div class="container mx-auto">
+            <h2 class="font-luckiest text-4xl lego-section-header text-center mb-12">Meet Our Awesome Robot!</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="img/Robot_Side.jpg" alt="Team Robot" class="rounded-lg shadow-xl w-full h-auto" onerror="this.onerror=null;this.src='https://via.placeholder.com/600x450.png?text=Our+Amazing+Robot';">
+                </div>
+                <div class="card p-8">
+                    <h3 class="font-luckiest text-2xl text-green-600 mb-4">"RoboSquirrel V1.0"</h3> <p class="text-gray-700 leading-relaxed mb-4">
+                        This is our current robot, designed and built by the Circuit Squirrels! We used LEGO Mindstorms (or SPIKE Prime) to build it. It has cool sensors like color sensors and touch sensors, and we programmed it to complete missions on the FLL game mat.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Super strong chassis for stability.</li>
+                        <li>Clever attachments for different tasks.</li>
+                        <li>Programmed using Python/Scratch-like blocks.</li>
+                        <li>Ready to take on the challenge missions!</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="project" class="py-16 px-6 lego-stud-bg">
+        <div class="container mx-auto">
+            <h2 class="font-luckiest text-4xl lego-section-header text-center mb-12">Our Innovation Project</h2>
+            <div class="card p-8 max-w-3xl mx-auto">
+                <h3 class="font-luckiest text-2xl text-purple-600 mb-4">This Year's Challenge: SUBMERGED</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    Our team, the Circuit Squirrels, is tackling the challenge of oyster restoration in the Chesapeake Bay. 
+                    We've been researching, brainstorming, and developing an innovative solution to bring back our oysters.
+                </p>
+                <p class="text-gray-700 leading-relaxed font-semibold mb-2">Our Solution Idea: "SCORBS"</p>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    [Briefly explain their project idea here. What does it do? How does it help?]
+                </p>
+                <img src="https://placehold.co/700x400/34D399/FFFFFF?text=Our+Project+Idea" alt="Project Sketch" class="rounded-lg shadow-md w-full h-auto mb-4" onerror="this.onerror=null;this.src='https://via.placeholder.com/700x400.png?text=Our+Project+Idea';">
+                <p class="text-gray-700 leading-relaxed">
+                    We're excited to share more about it at our next competition!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="py-16 px-6 bg-yellow-100">
+        <div class="container mx-auto">
+            <h2 class="font-luckiest text-4xl lego-section-header text-center mb-12">Meet The Circuit Squirrels!</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 justify-items-center">
+                <div class="card text-center p-6 max-w-xs w-full"> <img src="https://placehold.co/150x150/00AEEF/FFFFFF?text=Team+Member" alt="Team Member Martin P.-R." class="w-24 h-24 rounded-full mx-auto mb-4 shadow-md" onerror="this.onerror=null;this.src='https://via.placeholder.com/150.png?text=Team+Member';">
+                    <h4 class="font-luckiest text-xl text-blue-700">Martin P.-R.</h4>
+                    <p class="text-sm text-gray-600">Lead Robot Engineer</p>
+                    <p class="text-xs text-gray-500 mt-1">"I love figuring out how mechanisms work!"</p>
+                </div>
+                <div class="card text-center p-6 max-w-xs w-full">
+                    <img src="https://placehold.co/150x150/ED1C24/FFFFFF?text=Team+Member" alt="Team Member Kusum K." class="w-24 h-24 rounded-full mx-auto mb-4 shadow-md" onerror="this.onerror=null;this.src='https://via.placeholder.com/150.png?text=Team+Member';">
+                    <h4 class="font-luckiest text-xl text-red-700">Kusum K.</h4>
+                    <p class="text-sm text-gray-600">Innovation Project Lead</p>
+                    <p class="text-xs text-gray-500 mt-1">"Coming up with new ideas is exciting!"</p>
+                </div>
+                <div class="card text-center p-6 max-w-xs w-full">
+                    <img src="https://placehold.co/150x150/662D91/FFFFFF?text=Coach" alt="Team Coach" class="w-24 h-24 rounded-full mx-auto mb-4 shadow-md" onerror="this.onerror=null;this.src='https://via.placeholder.com/150.png?text=Coach';">
+                     <h4 class="font-luckiest text-xl text-purple-700">Coach [Name]</h4> <p class="text-sm text-gray-600">Team Mentor</p>
+                    <p class="text-xs text-gray-500 mt-1">"So proud of the Circuit Squirrels!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sponsors" class="py-16 px-6">
+        <div class="container mx-auto text-center">
+            <h2 class="font-luckiest text-4xl lego-section-header mb-12">Our Awesome Sponsors!</h2>
+            <p class="text-gray-700 mb-8">We couldn't do it without their amazing support!</p>
+            <div class="flex flex-wrap justify-center items-center gap-10">
+                <img src="https://placehold.co/200x100/CCCCCC/969696?text=Sponsor+Logo+1" alt="Sponsor 1" class="h-16 md:h-20" onerror="this.onerror=null;this.src='https://via.placeholder.com/200x100.png?text=Sponsor+1';">
+                <img src="https://placehold.co/200x100/CCCCCC/969696?text=Sponsor+Logo+2" alt="Sponsor 2" class="h-16 md:h-20" onerror="this.onerror=null;this.src='https://via.placeholder.com/200x100.png?text=Sponsor+2';">
+                <img src="https://placehold.co/200x100/CCCCCC/969696?text=Sponsor+Logo+3" alt="Sponsor 3" class="h-16 md:h-20" onerror="this.onerror=null;this.src='https://via.placeholder.com/200x100.png?text=Sponsor+3';">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16 px-6 bg-blue-100 lego-stud-bg">
+        <div class="container mx-auto max-w-xl text-center">
+            <h2 class="font-luckiest text-4xl lego-section-header mb-8">Get In Touch!</h2>
+            <p class="text-gray-700 mb-6">
+                Want to learn more, support our team, or just say hi? Reach out to our coaches!
+            </p>
+            <p class="text-xl font-semibold text-blue-700 mb-2">
+                Email: <a href="mailto:coach@circuitsquirrels.org" class="hover:underline">coach@circuitsquirrels.org</a> </p>
+            <p class="text-gray-600">(Please replace with your team's actual contact email)</p>
+            </div>
+    </section>
+
+    <footer class="lego-footer text-center p-8">
+        <p>&copy; <span id="currentYear"></span> Circuit Squirrels FLL Team #60911. All Rights Reserved.</p>
+        <p class="text-sm mt-2">Building a brighter future, one LEGO brick at a time!</p>
+    </footer>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                // Ensure the target element exists before trying to scroll to it
+                const targetElement = document.querySelector(this.getAttribute('href'));
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
