@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Circuit Squirrels - Our Seasons</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Luckiest+Guy&display=swap"
+        rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+        }
+
+        .font-luckiest {
+            font-family: 'Luckiest Guy', cursive;
+        }
+
+        .lego-header {
+            background-color: #0057a8;
+            color: white;
+        }
+
+        .lego-footer {
+            background-color: #333;
+            color: white;
+        }
+
+        .lego-section-header {
+            color: #da291c;
+        }
+
+        .nav-link {
+            color: white;
+            font-weight: 600;
+            padding: 8px 16px;
+            border-radius: 6px;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            background-color: #ffcf00;
+            color: black;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .lego-brick-button {
+            background-color: #ffcf00;
+            color: #000;
+            border: 2px solid #da291c;
+            border-radius: 8px;
+            padding: 10px 20px;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .lego-brick-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .lego-stud-bg {
+            background-image: radial-gradient(#00000010 15%, transparent 16%), radial-gradient(#00000010 15%, transparent 16%);
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="lego-header p-6 shadow-lg">
+        <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center">
+            <div>
+                <h1 class="font-luckiest text-4xl md:text-5xl mb-1 sm:mb-0">Circuit Squirrels</h1>
+                <p class="text-sm md:text-base text-yellow-300">FLL Team #60911</p>
+            </div>
+            <nav class="mt-3 sm:mt-0">
+                <ul class="flex space-x-2 sm:space-x-4">
+                    <li><a href="index.html#about" class="nav-link">About Us</a></li>
+                    <li><a href="index.html#robot" class="nav-link">Our Robot</a></li>
+                    <li><a href="index.html#project" class="nav-link">Project</a></li>
+                    <li><a href="index.html#team" class="nav-link">Team</a></li>
+                    <li><a href="#seasons" class="nav-link">Seasons</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="bg-gradient-to-r from-yellow-400 via-red-500 to-blue-500 text-white py-20 px-6 text-center">
+        <div class="container mx-auto">
+            <h2 class="font-luckiest text-5xl md:text-6xl mb-4">Our Past Adventures</h2>
+            <p class="text-xl md:text-2xl mb-8">See how the Circuit Squirrels have grown over the seasons!</p>
+            <a href="#seasons" class="lego-brick-button text-lg">Explore Seasons</a>
+        </div>
+    </section>
+
+    <section id="seasons" class="py-16 px-6 lego-stud-bg">
+        <div class="container mx-auto">
+            <h2 class="font-luckiest text-4xl lego-section-header text-center mb-12">Our Previous Seasons</h2>
+
+            <div class="grid md:grid-cols-2 gap-12 mb-16">
+                <div class="card p-6">
+                    <h3 class="font-luckiest text-2xl text-blue-600 mb-4">2023-2024 Season: MASTERPIECE</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        In our rookie season, we tackled the “MASTERPIECE” challenge. We qualified for State, and even made it to the World Festival in Houston! 
+                        <br />
+                        We built a creative robot, which
+                        performed well and was able to get about half of all available points. <br />
+                        For our Innovation Project, the Circuit Squirrels promoted a Montessori education through 
+                        use of a Virtual Reality environment to help people experience 
+                        Montessori classrooms. We also proposed hands-on museum exhibits about Montessori learning and 
+                        explored LEGO-based Montessori materials. With input from educators and experts, the team identified ways 
+                        to bring Montessori’s hands-on, child-driven methods to more families and communities around the world.
+                        <br />
+                        We learned a ton about teamwork and had a blast competing in our first qualifier. We even made it to the
+                        State Championship!
+                    </p>
+                    <img src="img/masterpiece/masterpiece_team.jpg" alt="Circuit Squirrels Masterpiece Season"
+                        class="rounded-lg shadow-md w-full h-auto mb-4"
+                        onerror="this.onerror=null;this.src='https://via.placeholder.com/600x400.png?text=MASTERPIECE+Season';">
+                </div>
+                <div class="card p-6">
+                    <h3 class="font-luckiest text-2xl text-green-600 mb-4">2024-2025 Season: SUBMERGED</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        This year, our challenge was “SUBMERGED.” <br />
+
+                        Our team tackled the challenge of oyster restoration in the Chesapeake Bay. 
+                        Oysters are super important for the health of our bay, but they are in danger because of pollution and habitat loss.
+                        We researched, brainstormed, and developed an innovative solution to bring back our oysters: S.C.O.R.B.s!
+                        <br />
+                        S.C.O.R.B.s (swiss cheese oyster reef blocks) are artificial oyster reef blocks that we designed to help the regrowth of oysters in our area.<br /> 
+                        We spoke to two marine biologists (from CNU and VIMS) who helped give us tips and inspire us to make these. Since oysters grow in tall stacks we 
+                        wanted something that’ll match the height oysters in any size. Taking inspiration from Lego we designed adjustable growth blocks that can match 
+                        any size and shape with because of two pegs on the top of the blocks that will connect to other blocks just like Lego. We wanted to replicate some 
+                        of the characteristics of real oyster reefs so we put holes into our blocks because in real reefs animals live and hide from predators in those holes. 
+                        (Swiss cheese because of its holes.)<br />
+                        If we put this into the water it should help the ecosystem just as a real reef should. 
+
+                        <br /><br />
+                        We want to help by:
+                        <ul class="list-disc list-inside ml-6">
+                            <li>Encouraging people to “adopt” oysters</li>
+                            <li>Educating people to be mindful about our oysters</li>
+                            <li>Building better artificial oyster reefs</li>
+                        </ul>
+                        <br />
+                        
+                    </p>
+                    <img src="img/submerged/submerged_team.JPG" alt="Circuit Squirrels Submerged Season"
+                        class="rounded-lg shadow-md w-full h-auto mb-4"
+                        onerror="this.onerror=null;this.src='https://via.placeholder.com/600x400.png?text=SUBMERGED+Season';">
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="index.html" class="lego-brick-button text-lg">Return Home</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="lego-footer text-center p-8 mt-12">
+        <p>&copy; <span id="currentYear"></span> Circuit Squirrels FLL Team #60911. All Rights Reserved.</p>
+        <p class="text-sm mt-2">Building a brighter future, one LEGO brick at a time!</p>
+    </footer>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetElement = document.querySelector(this.getAttribute('href'));
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
